@@ -184,3 +184,25 @@ footer span {
 	color: #77a466;
 	font-size: .875em;
 }
+/* ----------- Tablets larger than 768px wide ----------- */
+@media all and (min-width: 768px) {
+	.bottom-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+	}
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33%;
+		height: auto;
+}
+
+/* ----------- Monitors larger than 1200px wide ----------- */
+@media all and (min-width: 1200px) {
+	header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
