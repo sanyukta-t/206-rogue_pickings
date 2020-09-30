@@ -19,7 +19,7 @@ body {
 	align-items: center;
 	flex-flow: row wrap;
 	font-size:1em;
-
+  width: 90%;
 }
 
 h1,
@@ -32,6 +32,7 @@ h4 {
 }
 h1 {
 	font-size: 1.875em;
+
 }
 h2 {
     font-size: 1.5em;
@@ -46,32 +47,34 @@ h4 {
 p {
 	font-size: .875em;
 	line-height: 21px;
-    padding: 0 30px;
+
 }
 
 /*The widths are in a percentage!*/
 header {
 
-	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-flow: row wrap;
+  text-align: center;
 }
 
 header h1 {
-
+  width:100%
 	margin: 0;
-	padding: 38px 0;
+	padding: 10px 0 5px 0;
+  border-bottom: 3px solid #77a466;
+
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-
-	padding: 46px 0;
+  width: 100%;
+	padding: 10px 0 15px 0;
 }
 header nav ul {
 	margin: 0;
@@ -82,7 +85,9 @@ header nav ul li {
 	font-weight: 700;
 	font-size: .875em;
 	padding: 0 10px;
-	display: inline;
+	text-align: center;
+  list-style: none;
+  line-height: 2em;
 }
 header nav ul li a{
 	text-decoration: none;
@@ -127,24 +132,10 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 
 	border-top: 1px solid #eee;
-}
-
-.section-one h4 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
 }
 
 .menu {
@@ -169,7 +160,7 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-
+  width: 100%;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
 	display: flex;
@@ -186,7 +177,12 @@ footer span {
 }
 /* ----------- Tablets larger than 768px wide ----------- */
 @media all and (min-width: 768px) {
-	.bottom-section {
+
+p {
+  padding: 0 30px;
+}
+
+  .bottom-section {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -199,9 +195,42 @@ footer span {
 		height: auto;
 }
 
+.section-one h4 {
+	padding: 10px 0;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
+}
+}
+
 /* ----------- Monitors larger than 1200px wide ----------- */
 @media all and (min-width: 1200px) {
-	header nav ul {
+
+  header nav {
+    width: 50%;
+  	float: right;
+	  padding: 46px 0;
+    text-align: right;
+  }
+  header h1 {
+    width: 50%;
+    float:left;
+    border: none;
+    margin: 0;
+	  padding: 38px 0;
+    text-align:left;
+
+
+
+  }
+  header nav ul {
     display: flex;
     justify-content: space-between;
   }
