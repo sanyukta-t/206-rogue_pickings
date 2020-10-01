@@ -63,7 +63,7 @@ header {
 
 header h1 {
   border-bottom: 3px solid #77a466;
-  width:100%
+  width:100%;
 	margin: 0;
 	padding: 10px 0 5px 0;
 
@@ -227,10 +227,8 @@ p {
     margin: 0;
 	  padding: 38px 0;
     text-align:left;
-
-
-
   }
+
   header nav ul {
     display: flex;
     justify-content: space-between;
